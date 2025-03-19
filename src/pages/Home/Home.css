@@ -1,0 +1,6 @@
+.home-container {
+    position: relative; /* Ensure relative positioning for absolute children */
+    /* background-color: #7b1a1a; */
+  }
+  
+ 

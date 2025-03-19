@@ -1,0 +1,100 @@
+
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container.hovered {
+    transform: scale(1.1); 
+  }
+  
+  .text-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .text-container.show-text {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+  .text-section{
+    /* height: 70%; */
+    margin: 2px;
+    border-radius: 6px;
+    bottom: 0;
+    margin-top: auto;
+  }
+
+  /* card.css */
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.8s ease;
+  }
+  
+  /* Text section hover effect */
+  .text-section:hover {
+    transform: translateX(50%);
+  }
+  
+  /* Image section hover effect */
+  .image-section:hover {
+    transform: translateX(-50%);
+  }
+  
+  .hover-card {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hover-card:hover .text-section {
+    transform: translateX(100%);
+  }
+  
+  .hover-card:hover .image-section {
+    transform: translateX(-100%);
+  }
+  .add-to-cart {
+    margin-top: 8px;
+    background-color: transparent;
+    color: white;
+    text-transform: none;
+    font-family: "Poppins";
+    font-weight: bold;
+    border: 2px solid white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  gap: 4px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.add-to-cart:hover {
+  background-color: orange;
+  color: white;
+  border-color: orange;
+}
+
+.hover-card:hover .rating-stars {
+  transform: translateY(-20px); /* Smooth slide-up */
+  opacity: 0;
+}
+
+.hover-card:hover .add-to-cart {
+  transform: translateY(0);
+  opacity: 1;
+}

@@ -1,0 +1,162 @@
+.hero-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 25px;
+    background-color: #000;
+    color: #fff;
+    min-height: 100vh; /* Ensures container takes up full height */
+    height: 100vh; /* Set height to 100% of the viewport height */
+    position: relative;
+    background-image: 
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), 
+      url("../../assets/dashboardImage.webp");
+    background-size: cover; /* Ensures the background image covers the container */
+    background-position: center; /* Keeps the image centered */
+    background-repeat: no-repeat; 
+    background-attachment: scroll; /* Keeps the image fixed as the user scrolls */
+    overflow: hidden;
+  }
+  
+  .hero-content {
+    width: 50%;
+    text-align: left;
+    filter: drop-shadow(4px 4px 100px #ffffff);
+    flex: 2;
+    overflow: hidden;
+  }
+  
+  .hero-content h1 {
+    font-size: 3vw;
+    font-weight: 300;
+    margin-bottom: 5px;
+    filter: drop-shadow(1px 1px 300px rgba(255, 255, 255, 0.8));
+  }
+  
+  .hero-content p {
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+  }
+  
+  .hero-btn {
+    background-color: #AB572D;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #914c16;
+  }
+  
+  .hero-btn:focus {
+    outline: none;
+    transform: scale(1.05);
+  }
+  
+  .ModelContainer {
+    height: 40vh; /* Adjust canvas size for better fit on tablet */
+    width: 60vh; /* You can adjust this based on your needs */
+  }
+  
+  /* Responsive adjustments for tablet screens */
+  @media (max-width: 1024px) {
+    .hero-container {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 20px;
+      height: auto; /* Allow auto height adjustment on tablet */
+    }
+  
+    .hero-content {
+      width: 100%;
+      text-align: center;
+      margin-top: 0;
+    }
+  
+    .hero-content h1 {
+      font-size: 2.5rem;
+      margin: 20px 0;
+    }
+  
+    .hero-content p {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  
+    .hero-btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      margin-top: 10px;
+    }
+  
+    .ModelContainer {
+      height: 40vh; /* Adjust canvas size for better fit on tablet */
+    }
+  }
+  
+  /* Responsive adjustments for screens up to 768px */
+  @media (max-width: 768px) {
+    .hero-container {
+      padding: 15px;
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1.2rem;
+    }
+  
+    .hero-btn {
+      padding: 8px 16px;
+      font-size: 0.8rem;
+    }
+  
+    .ModelContainer {
+      height: 30vh; /* Adjust canvas size for mobile screens */
+    }
+  }
+  
+  /* Responsive adjustments for screens up to 480px */
+  @media (max-width: 480px) {
+    .hero-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 15px;
+      height: auto;
+    }
+  
+    .hero-content {
+      text-align: center;
+      width: 100%;
+      margin-top: 0;
+    }
+  
+    .hero-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .hero-content p {
+      font-size: 0.8rem;
+    }
+  
+    .hero-btn {
+      padding: 6px 12px;
+      font-size: 0.7rem;
+      margin-top: 10px;
+    }
+  
+    .ModelContainer {
+      height: 25vh; /* Adjust canvas size for mobile screens */
+    }
+  }
+  

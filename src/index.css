@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  scroll-behavior: smooth;
+  /* background-color: #666666; */
+  overflow-x: hidden;
+  
+  
+}
+
+
+
+html, body {
+  
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #AB572D #0b0b0b; /* Scrollbar thumb and track colors for Firefox */
+}
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #0b0b0b; /* Dark background for the scrollbar track */
+  border-radius: 10px; /* Rounded edges for the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #AB572D; /* Scrollbar thumb in a luxury orange-like color */
+  border-radius: 10px; /* Rounded scrollbar thumb */
+  border: 2px solid #AB572D; /* Optional border for a polished look */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Scrollbar thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #914c16; /* Darken the thumb color on hover */
+}
+
+/* Scrollbar corner for two scrollbars (e.g., horizontal and vertical) */
+::-webkit-scrollbar-corner {
+  background-color: #0b0b0b; /* Match the background color */
+}
+

@@ -1,0 +1,160 @@
+/* Default styling for large screens */
+.heroTwo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align content to the right */
+    padding: 50px;
+    background-color: #000000; 
+    color: #fff; /* White text color */
+    min-height: 100vh; /* Set height to 100vh to fill the screen */
+    position: relative; /* Default relative positioning */
+}
+
+.heroTwo-content{
+    width: 50%; /* Limit content width */
+    text-align: right; /* Right-align the text */
+    filter: drop-shadow(4px 4px 100px #ffffff);
+    
+}
+
+.heroTwo-content h1 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    filter: drop-shadow(1px 1px 300px rgba(255, 255, 255, 0.8));
+}
+
+.heroTwo-content p {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.heroTwo-btn {
+    background-color: #AB572D;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.heroTwo-btn:hover {
+    background-color: #914c16; /* Darken button on hover */
+}
+
+
+.Model {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none; /* Disable pointer events for the model */
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) {
+    .heroTwo-container {
+        flex-direction: column; /* Stack vertically on tablet */
+        align-items: center; /* Center items horizontally */
+        justify-content: flex-start; /* Center items vertically */
+        padding: 20px; /* Reduced padding */
+    }
+
+    .heroTwo-content {
+        width: 100%; /* Ensure full width for mobile */
+        text-align: center; /* Center text for better alignment */
+        margin: 0; /* Remove margin if needed */
+        filter: drop-shadow(4px 4px 100px #ffffff);
+    }
+
+    .heroTwo-content h1 {
+        font-size: 2.5rem; /* Adjusted size for better readability */
+        margin: 20px 0; /* Margin for spacing */
+    }
+
+    .heroTwo-content p {
+        font-size: 1.8rem; /* Adjusted size for better readability */
+        margin-bottom: 20px; /* Margin for spacing */
+    }
+
+    .heroTwo-btn {
+        padding: 10px 20px; /* Adjusted padding */
+        font-size: 0.9rem; /* Adjusted font size */
+        margin-top: 10px; /* Add some spacing above the button */
+    }
+    .Model{
+        z-index: 1;
+    }
+
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .heroTwo-container {
+        padding: 15px; /* Reduced padding */
+    }
+
+    .hero-content{
+        filter: drop-shadow(4px 4px 100px #ffffff);
+}
+
+    .heroTwo-content h1 {
+        font-size: 2rem; /* Adjusted size for better readability */
+        filter: drop-shadow(4px 4px 100px #ffffff);
+    }
+
+    .heroTwo-content p {
+        font-size: 1.2rem; /* Adjusted size for better readability */
+    }
+
+    .heroTwo-btn {
+        padding: 8px 16px; /* Adjusted padding */
+        font-size: 0.8rem; /* Adjusted font size */
+    }
+
+    
+
+    
+}
+
+/* Smaller mobile screens adjustments */
+@media (max-width: 480px) {
+    .heroTwo-container {
+        flex-direction: column; /* Stack vertically on mobile */
+        /* Reduced padding */
+       height: auto; /* Allow height to adjust automatically */
+       align-items: center; /* Center items horizontally */
+       justify-content: flex-start; /* Center items vertically */
+    }
+
+    .heroTwo-content{
+        text-align: center; /* Keep text aligned to the left */
+        width: 100%; /* Full width */
+        margin-top: 0; /* Ensure no margin at the top */
+        filter: drop-shadow(4px 4px 100px #ffffff);
+        
+    }
+
+    .heroTwo-content h1 {
+        font-size: 1.8rem; /* Adjusted size for better readability */
+    }
+
+    .heroTwo-content p {
+        font-size: 0.8rem; /* Adjusted size for better readability */
+    }
+
+    .heroTwo-btn {
+        padding: 6px 12px; /* Adjusted padding */
+        font-size: 0.7rem; /* Adjusted font size */
+        margin-top: 10px; /* Add some spacing above the button */
+    }
+    .Model{
+        z-index: -1;
+    }
+
+   
+}

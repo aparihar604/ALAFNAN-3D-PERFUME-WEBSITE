@@ -1,0 +1,16 @@
+.empty-container {
+    height: 100vh; /* 300 times the height of the viewport */
+    background-color: rgba(0, 0, 0, 0.82);
+    
+}
+
+.Model{
+    /* position: relative; */
+     /* Position the View component absolutely */
+             /* Align to the left */
+    width: 100%;       /* Full width */
+    height: 100%;      /* Full height */
+    /* pointer-events: none;  */
+  
+    z-index: 1;       /* Ensure it’s above other elements */
+  }

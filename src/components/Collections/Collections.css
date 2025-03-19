@@ -1,0 +1,21 @@
+.collections-section {
+    position: relative; /* Allow absolute positioning for children */
+    padding: 2rem;
+    color: #fff;
+    overflow: hidden; /* Ensure no overflow */
+    background-color: #000000df;
+    height: 70vh;
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #AB572D;
+    position: relative; /* Optional if you want to adjust the title positioning */
+    z-index: 10; /* Ensure the title is above the overlay */
+  }
+  
+  
+  .model-overlay {
+    width: 100%; /* Adjust size as needed */
+    height: 100%; /* Maintain aspect ratio */
+  }

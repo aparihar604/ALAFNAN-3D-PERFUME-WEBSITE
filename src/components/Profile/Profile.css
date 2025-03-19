@@ -1,0 +1,117 @@
+/* Profile Component Styling */
+.profile {
+    display: flex; /* Use flexbox for layout */
+    width: 100%;
+    min-height: 100vh; /* Increase max width for better spacing */
+    
+    padding: 20px;
+   
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #000000;
+    font-family: Arialrgb(0, 0, 0)serif;
+  }
+  
+  .profile-pic {
+    flex: 1; /* Allow the profile picture to take available space */
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image vertically */
+    margin-right: 20px; /* Space between picture and form */
+  }
+  
+  .profile-pic img {
+    width: 120px; /* Set a fixed width for profile picture */
+    height: 120px; /* Set a fixed height for profile picture */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Cover to maintain aspect ratio */
+    border: 2px solid #007bff; /* Border around the profile picture */
+    margin-bottom: 15px; /* Space below the image */
+  }
+  
+  .profile-form {
+    flex: 2; /* Allow the form to take up more space */
+  }
+  
+  .profile h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .profile label {
+    display: block;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .profile input[type="text"],
+  .profile input[type="email"],
+  .profile input[type="file"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #292929;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #0c0c0c;
+    color: #ffffff;
+  }
+  
+  .profile input[type="file"] {
+    padding: 8px;
+  }
+  
+  .profile input[type="text"]:focus,
+  .profile input[type="email"]:focus,
+  .profile input[type="file"]:focus {
+    outline: none;
+    border-color: #007bff;
+    
+  }
+  
+  .profile button {
+    width: 50%;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .profile button:hover {
+    background-color: #0056b3;
+  }
+  
+  .profile .otp {
+    margin-top: 15px;
+  }
+  
+  .profile .otp input[type="text"] {
+    width: calc(100% - 100px);
+    display: inline-block;
+  }
+  
+  .profile .otp button {
+    width: 95px;
+    display: inline-block;
+    margin-left: 5px;
+    background-color: #28a745;
+  }
+  
+  .profile .otp button:hover {
+    background-color: #218838;
+  }
+  
+  /* Toastify styling */
+  .Toastify__toast--success {
+    background-color: #28a745 !important;
+  }
+  
+  .Toastify__toast--error {
+    background-color: #dc3545 !important;
+  }

@@ -1,0 +1,57 @@
+/* Profile Page Styles */
+.profile-container {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    padding: 20px 150px;
+  }
+  
+  .profile-top-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .profile-box {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+  }
+  
+  .profile-tabs {
+    display: flex;
+    justify-content: flex-start; /* Align tabs to the left */
+    gap: 10px; /* Add small spacing between tabs */
+    margin-bottom: 20px;
+  }
+  
+  .profile-tab {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Add slight rounding for better appearance */
+  }
+  
+  .profile-tab:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  .profile-tab.active {
+    background-color: white;
+    color: black;
+  }
+  
+  .profile-list {
+    margin-top: 1rem;
+  }
+  
+  .MuiTabs-root .MuiTabs-indicator {
+    background-color: white !important;
+  }
